@@ -54,7 +54,7 @@ a{
 
 .headerLogo img{
     margin-left: 5vw;
-    height: 15vh;
+    width: 20vw;
 }
 
 
@@ -295,6 +295,7 @@ a{
     font-weight: bold;
     text-align: center;
     color: #008996;
+    margin-bottom: 0;
 }
 
 
