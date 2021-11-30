@@ -43,37 +43,6 @@ a{
 
     /* HEADER */
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    height: 20vh;
-    border-bottom: thin solid #9AD7D8;
-}
-
-.headerLogo img{
-    margin-left: 5vw;
-    width: 20vw;
-}
-
-
-.navLinks{
-    width: 60%;
-}
-.navLinks ul{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-.navLinks li{
-    border: thin solid #9AD7D8;
-    width: 100px;
-    text-align: center;
-    padding: 1%;
-    list-style: none;
-}
-
         /* Landing page body */
 
 .landingBody{
@@ -431,3 +400,22 @@ a{
     }
 
 }
+
+/*  BOOTSTRAP CUSTOMIZATION */
+
+    /* NAVBAR */
+    .navbar .navbar-nav{
+        justify-content: space-evenly;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .navbar-expand-md
+        .navbar-nav{
+            width: 80%;
+        }
+    }           
+                /* NAV-PILL */
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #9AD7D8;
+    }
