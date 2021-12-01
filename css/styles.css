@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-    /* TEXT MODIFICATIONS */
+    /* UTILITIES */
+
+        /* TEXT MODIFICATIONS */
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color: white;
@@ -29,7 +31,7 @@ a{
     text-decoration: none;
 }
 
-    /* BACKGROUND COLORS */
+        /* BACKGROUND COLORS */
 
 .aquaBackground{
     background-color: #9AD7D8;
@@ -41,11 +43,13 @@ a{
 
 
 
-    /* EFFECTS */
+        /* EFFECTS */
 
 .shadow{
     box-shadow: 10px 10px 12px -6px rgba(0,0,0,0.3);
 }
+
+    /* CUSTOM CLASSES */
 
     /* HEADER */
 
@@ -100,12 +104,7 @@ a{
 
     /* SOBRE NOSOTROS */
 
-
-.sobreNosotrosBody h2{
-    color: #331B5C;
-}
-
-
+        /* todo hecho con bootstrap + utilities */
 
     /* TRBAJO */
 
@@ -118,21 +117,18 @@ a{
     display: grid;
     grid-template-columns: repeat(9, 8vw);
     grid-template-rows: repeat(23, 5vw);
-    grid-gap: 1vw;
+    gap: 1vw;
 }
         /* GRILLA DE GALERIA DE TRABAJOS */
-.galleryImg img{
-    width: 100%;
-    height: 100%;
-      /* fill | contain | cover | none | scale-down  */
-    object-fit: cover;
-}
+
 
 .galleryItem-1{
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 6;
+    background-image: url(../images/3-TRABAJOS/1.jpg);
+    background-size: cover;
 }
 
 .galleryItem-2{
@@ -140,6 +136,8 @@ a{
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 6;
+    background-image: url(../images/3-TRABAJOS/2.jpg);
+    background-size: cover;
 }
 
 .galleryItem-3{
@@ -147,6 +145,8 @@ a{
     grid-column-end: 6;
     grid-row-start: 7;
     grid-row-end: 12;
+    background-image: url(../images/3-TRABAJOS/3.jpg);
+    background-size: cover;
 }
 
 .galleryItem-4{
@@ -154,6 +154,8 @@ a{
     grid-column-end: 10;
     grid-row-start: 7;
     grid-row-end: 12;
+    background-image: url(../images/3-TRABAJOS/4.jpg);
+    background-size: cover;
 }
 
 .galleryItem-5{
@@ -161,6 +163,8 @@ a{
     grid-column-end: 5;
     grid-row-start: 13;
     grid-row-end: 18;
+    background-image: url(../images/3-TRABAJOS/5.jpg);
+    background-size: cover;
 }
 
 .galleryItem-6{
@@ -168,6 +172,8 @@ a{
     grid-column-end: 10;
     grid-row-start: 13;
     grid-row-end: 18;
+    background-image: url(../images/3-TRABAJOS/6.jpg);
+    background-size: cover;
 }
 
 .galleryItem-7{
@@ -175,6 +181,8 @@ a{
     grid-column-end: 6;
     grid-row-start: 19;
     grid-row-end: 24;
+    background-image: url(../images/3-TRABAJOS/7.jpg);
+    background-size: cover;
 }
 
 .galleryItem-8{
@@ -182,7 +190,22 @@ a{
     grid-column-end: 10;
     grid-row-start: 19;
     grid-row-end: 24;
+    background-image: url(../images/3-TRABAJOS/8.jpg);
+    background-size: cover;
 }
+
+.hoverControl{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.galleryGrid div:hover{
+    opacity: 1;
+}
+
+
+
+
 
     /* EQUIPO */
 
@@ -320,15 +343,13 @@ a{
 }
 
 @media screen and (max-width: 576px){
+  
     /* HEADER */
-
-
 
         /* CAROUSEL */
     .landingBody aside .carousel{
         max-width: none;
     }    
-
 
         /* FOOTER */
 
@@ -345,6 +366,80 @@ a{
         height: 30px;
 
     }
+
+    /* TRABAJOS */
+
+    .trabajoBody{
+        margin: 0 0 10% 0;
+    }
+    
+
+    .galleryGrid{
+        grid-template-columns: repeat(10, 10vw);
+        grid-template-rows: repeat(95, 5vw);
+        gap: 0;
+    }
+    
+    .galleryItem-1{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 12;
+       
+        
+    }
+
+    .galleryItem-2{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 13;
+        grid-row-end: 24;
+    }
+
+    .galleryItem-3{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 25;
+        grid-row-end: 36;
+    }
+
+    .galleryItem-4{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 37;
+        grid-row-end: 48;
+    }
+
+    .galleryItem-5{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 49;
+        grid-row-end: 60;
+    }
+
+    .galleryItem-6{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 61;
+        grid-row-end: 72;
+    }
+
+    .galleryItem-7{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 73;
+        grid-row-end: 84;
+    }
+
+    .galleryItem-8{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 85;
+        grid-row-end: 96;
+    }
+
+
+
 
 }
 
