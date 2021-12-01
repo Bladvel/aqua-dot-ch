@@ -25,19 +25,21 @@
     <title>AQUA DOT</title>
 </head>
 
-<body id="bootstrap-overrides">
+<body>
 
     <!-- HEADER -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerInicio"
-                    aria-controls="navbarTogglerInicio" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerInicio" aria-controls="navbarTogglerInicio" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
                     <img src="images/aqua-logo.svg " style="height: 10vh;" alt="Logo Aqua Dot">
                 </a>
+                
                 <div class="collapse navbar-collapse" id="navbarTogglerInicio">
                     <ul class="navbar-nav nav-pills ms-auto mb-2 mb-md-0">
                         <li class="nav-item">
@@ -60,20 +62,62 @@
             </div>
         </nav>
     </header>
-    
+
 
     <!-- LANDING PAGE BODY -->
     <div class="aquaBackground landingBody">
         <section class="frontText">
-            <h1><span class="lightWeight">DISEÑO</span> HECHO SIMPLE</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ut ultricies augue id ex pharetra pellentesque. Suspendisse
-                interdum dolor a hendrerit pharetra. Sed felis tortor,
-                eleifend sed ultricies a, lacinia sed dui.
+            <h1>DISEÑO <span class="fw-bold">HECHO SIMPLE</span></h1>
+            <p class="text-center lead"> Creemos que todo buen negocio
+                tiene derecho a tener un aspecto
+                impresionante. Por eso no seguimos
+                las tendencias, sino que creamos un
+                diseño atemporal, único para cada
+                negocio y que refleja su esencia.                
             </p>
         </section>
-        <aside class="frontImage">
-            <p> Carrusel de imagenes </p>
+        <aside>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/1-INICIO/inicio1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1-INICIO/inicio2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1-INICIO/inicio4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1-INICIO/inicio5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1-INICIO/inicio6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </aside>
     </div>
 

@@ -60,12 +60,6 @@ a{
     text-align: center;
     width: 50%;
     margin-left: 5%;
-}
-
-.frontImage{
-    background-color: white;
-    width: 50%;
-    height: 70%;
     margin-right: 5%;
 }
 
@@ -76,7 +70,7 @@ a{
     justify-content: space-evenly;
     /* top | right | bottom | left */
     padding: 0 3vh 0 3vh;
-    height: 20vh;
+
 
 }
 .footerContent{
@@ -86,11 +80,8 @@ a{
 }
 .footerImages{
     display: flex;
-    width:15%;
     flex-wrap: nowrap;
     justify-content: space-between;
-/* Tengo que volver a las imagenes de los logos mas pequenas */
-    
 }
 
 .footerImages img{
@@ -285,33 +276,29 @@ a{
 
         /* Landing page body */
 
-        .landingBody{
-            display: flex;
-            flex-flow: column;
-            height: 100vh;
-            margin-bottom: 10%;
-            align-items: center;
-            justify-content: space-evenly;
-    
-        }
-    
-        .frontText{
-    
-            text-align: center;
-            width: 100%;
-            height: 50vh;
-            margin-left: 0;
-            /* top | right | bottom | left */
-            padding: 10% 5% 10% 5%;
-            background-color: white;
-        }
-    
-        .frontImage{
-            background-color: white;
-            width: 50%;
-            height: 50vh;
-            margin-right: 0%;
-        }
+    .landingBody{
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        margin-bottom: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .frontText{
+
+        text-align: center;
+        width: 100%;
+        /* top | right | bottom | left */
+        padding: 10% 5% 10% 5%;
+        background-color: white;
+    }
+
+    /* CAROUSEL */
+    .landingBody aside .carousel{
+        max-width: 70vw;
+    } 
 
     /* FOOTER */
 
@@ -350,7 +337,7 @@ a{
 
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 576px){
     /* HEADER */
 
             /* Landing page body */
@@ -358,7 +345,7 @@ a{
     .landingBody{
         display: flex;
         flex-flow: column;
-        height: 100vh;
+        
         margin-bottom: 10%;
         align-items: center;
         justify-content: space-evenly;
@@ -369,20 +356,17 @@ a{
 
         text-align: center;
         width: 100%;
-        margin-left: 0;
         /* top | right | bottom | left */
         padding: 10% 5% 10% 5%;
         background-color: white;
     }
 
-    .frontImage{
-        background-color: white;
-        width: 50%;
-        height: 50%;
-        margin-right: 0%;
-    }
+        /* CAROUSEL */
+    .landingBody aside .carousel{
+        max-width: none;
+    }    
 
-        
+
         /* FOOTER */
 
     .footerImages{
@@ -404,18 +388,24 @@ a{
 /*  BOOTSTRAP CUSTOMIZATION */
 
     /* NAVBAR */
-    .navbar .navbar-nav{
-        justify-content: space-evenly;
+
+.navbar .navbar-nav{
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-expand-md
+    .navbar-nav{
+        width: 80%;
     }
-    
-    @media screen and (min-width: 768px) {
-        .navbar-expand-md
-        .navbar-nav{
-            width: 80%;
-        }
-    }           
-                /* NAV-PILL */
-    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-        color: #fff;
-        background-color: #9AD7D8;
-    }
+}           
+            /*NAVBAR NAV-PILL */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #9AD7D8;
+}
+
+    /* CAROUSEL */
+.carousel{
+    max-width: 50vw;
+}    
