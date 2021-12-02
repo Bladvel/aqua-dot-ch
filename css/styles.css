@@ -49,6 +49,10 @@ a{
     box-shadow: 10px 10px 12px -6px rgba(0,0,0,0.3);
 }
 
+.marginBody{
+    margin: 10%;
+}
+
     /* CUSTOM CLASSES */
 
     /* HEADER */
@@ -62,6 +66,7 @@ a{
     margin-bottom: 10%;
     align-items: center;
 }
+
 .lightWeight{
     font-weight: lighter;
 }
@@ -108,11 +113,6 @@ a{
 
     /* TRBAJO */
 
-.trabajoBody{
-    margin: 10% 10% 10% 10%;
-    width: 100%;
-}
-
 .galleryGrid{
     display: grid;
     grid-template-columns: repeat(9, 8vw);
@@ -129,6 +129,7 @@ a{
     grid-row-end: 6;
     background-image: url(../images/3-TRABAJOS/1.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .galleryItem-2{
@@ -138,6 +139,7 @@ a{
     grid-row-end: 6;
     background-image: url(../images/3-TRABAJOS/2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .galleryItem-3{
@@ -147,6 +149,7 @@ a{
     grid-row-end: 12;
     background-image: url(../images/3-TRABAJOS/3.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .galleryItem-4{
@@ -156,6 +159,7 @@ a{
     grid-row-end: 12;
     background-image: url(../images/3-TRABAJOS/4.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .galleryItem-5{
@@ -165,6 +169,7 @@ a{
     grid-row-end: 18;
     background-image: url(../images/3-TRABAJOS/5.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .galleryItem-6{
@@ -174,6 +179,7 @@ a{
     grid-row-end: 18;
     background-image: url(../images/3-TRABAJOS/6.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .galleryItem-7{
@@ -183,6 +189,7 @@ a{
     grid-row-end: 24;
     background-image: url(../images/3-TRABAJOS/7.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .galleryItem-8{
@@ -192,11 +199,12 @@ a{
     grid-row-end: 24;
     background-image: url(../images/3-TRABAJOS/8.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .hoverControl{
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity .5s;
 }
 
 .galleryGrid div:hover{
@@ -204,22 +212,14 @@ a{
 }
 
 
-
-
-
     /* EQUIPO */
-
-.equipoBody{
-    width: 80%;
-    margin: 10% 10% 10% 10%;
-}
 
 .equipoGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50vh);
     /* <'grid-row-gap'> <'grid-column-gap'> */
-    grid-gap: 5vw;  
+    gap: 5vw;  
 }
 
         /* GRILLA DE GALERIA DE TRABAJOS */
@@ -260,7 +260,6 @@ a{
     font-size: 200%;
     font-weight: bold;
     text-align: center;
-    color: #008996;
     margin-bottom: 0;
 }
 
@@ -369,10 +368,11 @@ a{
 
     /* TRABAJOS */
 
-    .trabajoBody{
+    
+    #trabajoBody{
         margin: 0 0 10% 0;
     }
-    
+
 
     .galleryGrid{
         grid-template-columns: repeat(10, 10vw);
@@ -384,9 +384,7 @@ a{
         grid-column-start: 1;
         grid-column-end: 11;
         grid-row-start: 1;
-        grid-row-end: 12;
-       
-        
+        grid-row-end: 12;  
     }
 
     .galleryItem-2{
@@ -438,10 +436,17 @@ a{
         grid-row-end: 96;
     }
 
+    /* EQUIPO */
 
+    .equipoGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 50vh);
+    }
 
 
 }
+
+/*********************************************************************/
 
 /*  BOOTSTRAP CUSTOMIZATION */
 
@@ -466,4 +471,10 @@ a{
     /* CAROUSEL */
 .carousel{
     max-width: 50vw;
-}    
+}
+
+    /* FiGURE */
+
+figure{
+    margin: 0;
+}
