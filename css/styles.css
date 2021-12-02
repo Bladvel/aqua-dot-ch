@@ -328,16 +328,16 @@ a{
 
     /* CONTACTO */
 
-    .contactoBody{
+    /* .contactoBody{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
-    }
+    } */
 
-    .contactoBody iframe{
+    /* .contactoBody iframe{
         width: 80vw;
-    }
+    } */
 
 }
 
@@ -477,4 +477,29 @@ a{
 
 figure{
     margin: 0;
+}
+
+    /* btn-primary */
+
+.btn-primary{
+    background-color: #008996;
+    border-color: #008996;
+ }
+
+.btn-primary:hover{
+    background-color: cadetblue;
+    border-color: cadetblue;
+}
+
+
+
+.btn-primary:focus{
+    background-color: cadetblue;
+    border-color: cadetblue;
+    box-shadow: 0 0 0 0.25rem rgba(1,199,199,0.5);
+}
+
+.btn-primary:active{
+    background-color: cadetblue;
+    border-color: cadetblue;
 }
