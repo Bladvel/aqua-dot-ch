@@ -1,0 +1,109 @@
+
+    /* SOBRE NOSOTROS */
+
+        /* todo hecho con bootstrap + utilities */
+
+    /* TRBAJO */
+
+.galleryGrid{
+    display: grid;
+    grid-template-columns: repeat(9, 8vw);
+    grid-template-rows: repeat(23, 5vw);
+    gap: 1vw;
+
+    div{
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+}
+
+        /* GRILLA DE GALERIA DE TRABAJOS */
+
+
+.galleryItem-1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-image: url(../images/3-TRABAJOS/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryItem-2{
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-image: url(../images/3-TRABAJOS/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryItem-3{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 12;
+    background-image: url(../images/3-TRABAJOS/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryItem-4{
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 12;
+    background-image: url(../images/3-TRABAJOS/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryItem-5{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 13;
+    grid-row-end: 18;
+    background-image: url(../images/3-TRABAJOS/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryItem-6{
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 13;
+    grid-row-end: 18;
+    background-image: url(../images/3-TRABAJOS/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryItem-7{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 19;
+    grid-row-end: 24;
+    background-image: url(../images/3-TRABAJOS/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryItem-8{
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 19;
+    grid-row-end: 24;
+    background-image: url(../images/3-TRABAJOS/8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hoverControl{
+    opacity: 0;
+    transition: opacity .5s;
+}
+

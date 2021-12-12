@@ -1,0 +1,54 @@
+/* RESOLUCION BASE (DESKTOP FIRST) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* UTILITIES */
+
+        /* TEXT MODIFICATIONS */
+body{
+    font-family: $body-font;
+    background-color: white;
+    
+}
+
+h1,h2,h3, .footer{
+    font-family: $title-font;
+    color: $title-font-size-color;
+}
+
+.purpleText{
+    color: $font-color-purple;
+}
+
+h1,h2{
+    font-size: $title-font-size;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+        /* BACKGROUND COLORS */
+
+.aquaBackground{
+    background-color: $aqua-background;
+}
+
+.aquaBackground-gradient{
+    background: $aqua-background-gradient;
+}
+
+
+
+        /* EFFECTS */
+
+.shadow{
+    box-shadow: $shadow;
+}
+
+.marginBody{
+    margin: $main-margin;
+}

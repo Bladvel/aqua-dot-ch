@@ -1,0 +1,157 @@
+ 
+    /* MEDIA QUERIES */
+    
+@media screen and (max-width: 768px){
+    
+    /* HEADER */
+
+        /* Landing page body */
+
+    .landingBody{
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        margin-bottom: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .frontText{
+
+        text-align: center;
+        width: 100%;
+        /* top | right | bottom | left */
+        background-color: white;
+    }
+
+    /* CAROUSEL */
+    .landingBody aside .carousel{
+        max-width: 70vw;
+    } 
+
+    /* FOOTER */
+
+    .footerContent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footerImages{
+        display: flex;
+        width: 120px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 576px){
+    
+    /* HEADER */
+
+        /* CAROUSEL */
+    .landingBody aside .carousel{
+        max-width: none;
+    }    
+
+        /* FOOTER */
+
+    .footerImages{
+        display: flex;
+        width: 90px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        img{
+            width: 30px;
+            height: 30px;    
+        }
+        
+    }
+
+    /* TRABAJOS */
+
+    
+    #trabajoBody{
+        margin: 0 0 10% 0;
+    }
+
+
+    .galleryGrid{
+        grid-template-columns: repeat(10, 10vw);
+        grid-template-rows: repeat(95, 5vw);
+        gap: 0;
+    }
+    
+    .galleryItem-1{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 12;  
+    }
+
+    .galleryItem-2{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 13;
+        grid-row-end: 24;
+    }
+
+    .galleryItem-3{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 25;
+        grid-row-end: 36;
+    }
+
+    .galleryItem-4{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 37;
+        grid-row-end: 48;
+    }
+
+    .galleryItem-5{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 49;
+        grid-row-end: 60;
+    }
+
+    .galleryItem-6{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 61;
+        grid-row-end: 72;
+    }
+
+    .galleryItem-7{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 73;
+        grid-row-end: 84;
+    }
+
+    .galleryItem-8{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 85;
+        grid-row-end: 96;
+    }
+
+    /* EQUIPO */
+
+    .equipoGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 50vh);
+    }
+
+
+}
