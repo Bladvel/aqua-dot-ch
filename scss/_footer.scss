@@ -1,26 +1,21 @@
     /* FOOTER */
 .footer{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
+    @include flex-dir-justify(column,space-evenly);
     /* top | right | bottom | left */
     padding: 3vh 3vh 0 3vh;
 }
 
 .footerContent{
-    display: flex;
+    @include flex-dir-justify(row,space-between);
     align-items: center;
-    justify-content: space-between;
+
 }
 
 .footerImages{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    @include flex-dir-justify(row,space-between);
 
     img{
-        width: 50px;
-        height: 50px;
+        @include size(50px,50px);
     }
 }
 

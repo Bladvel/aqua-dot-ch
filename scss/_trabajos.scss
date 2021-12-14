@@ -23,83 +23,51 @@
 
 
 .galleryItem-1{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    background-image: url(../images/3-TRABAJOS/1.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(1,5);
+    @include grid-rows(1,6);
+    @include background-image-size-position("../images/3-TRABAJOS/muck-rack.jpg", cover, center);
 }
 
 .galleryItem-2{
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    background-image: url(../images/3-TRABAJOS/2.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(5,10);
+    @include grid-rows(1,6);
+    @include background-image-size-position("../images/3-TRABAJOS/iteratively.jpg", cover, center);
 }
 
 .galleryItem-3{
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 7;
-    grid-row-end: 12;
-    background-image: url(../images/3-TRABAJOS/3.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(1,6);
+    @include grid-rows(7,12);
+    @include background-image-size-position("../images/3-TRABAJOS/podia.jpg", cover, center);
 }
 
 .galleryItem-4{
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 7;
-    grid-row-end: 12;
-    background-image: url(../images/3-TRABAJOS/4.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(6,10);
+    @include grid-rows(7,12);
+    @include background-image-size-position("../images/3-TRABAJOS/hq-trivia.jpg", cover, center);
 }
 
 .galleryItem-5{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 13;
-    grid-row-end: 18;
-    background-image: url(../images/3-TRABAJOS/5.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(1,5);
+    @include grid-rows(13,18);
+    @include background-image-size-position("../images/3-TRABAJOS/cameo.jpg", cover, center);
 }
 
 .galleryItem-6{
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 13;
-    grid-row-end: 18;
-    background-image: url(../images/3-TRABAJOS/6.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(5,10);
+    @include grid-rows(13,18);
+    @include background-image-size-position("../images/3-TRABAJOS/red-bull-vars.jpg", cover, center);
 }
 
 .galleryItem-7{
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 19;
-    grid-row-end: 24;
-    background-image: url(../images/3-TRABAJOS/7.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(1,6);
+    @include grid-rows(19,24);
+    @include background-image-size-position("../images/3-TRABAJOS/welcome-kit.jpg", cover, center);
 }
 
 .galleryItem-8{
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 19;
-    grid-row-end: 24;
-    background-image: url(../images/3-TRABAJOS/8.jpg);
-    background-size: cover;
-    background-position: center;
+    @include grid-columns(6,10);
+    @include grid-rows(19,24);
+    @include background-image-size-position("../images/3-TRABAJOS/amazon.jpg", cover, center);
 }
 
 .hoverControl{

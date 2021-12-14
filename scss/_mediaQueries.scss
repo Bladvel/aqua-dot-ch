@@ -8,13 +8,16 @@
         /* Landing page body */
 
     .landingBody{
-        display: flex;
-        flex-flow: column;
+        @include flex-dir-justify(column,space-evenly);
         height: auto;
         margin-bottom: 10%;
         align-items: center;
-        justify-content: space-evenly;
 
+        aside{
+            .carousel{
+                max-width: 70vw;
+            }
+        }
     }
 
     .frontText{
@@ -25,28 +28,13 @@
         background-color: white;
     }
 
-    /* CAROUSEL */
-    .landingBody aside .carousel{
-        max-width: 70vw;
-    } 
-
     /* FOOTER */
 
-    .footerContent{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .footerImages{
-        display: flex;
         width: 120px;
-        flex-wrap: nowrap;
-        justify-content: space-between;
 
         img{
-            width: 40px;
-            height: 40px;
+            @include size(40px,40px);
         }
         
     }
@@ -64,14 +52,10 @@
         /* FOOTER */
 
     .footerImages{
-        display: flex;
         width: 90px;
-        flex-wrap: nowrap;
-        justify-content: space-between;
 
         img{
-            width: 30px;
-            height: 30px;    
+            @include size(30px,30px);  
         }
         
     }
@@ -89,62 +73,21 @@
         grid-template-rows: repeat(95, 5vw);
         gap: 0;
     }
+
+    // Bucle para definir los items del grid de trabajo
+    $start: 1;
+    $end: 12;
+    @for $i from 1 through 8{
+        .galleryItem-#{$i}{
+            @include grid-columns(1,11);
+
+            @include grid-rows($start,$end);
+        }
+        $start: $start + 12;
+        $end: $end + 12;
+
+    }
     
-    .galleryItem-1{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 1;
-        grid-row-end: 12;  
-    }
-
-    .galleryItem-2{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 13;
-        grid-row-end: 24;
-    }
-
-    .galleryItem-3{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 25;
-        grid-row-end: 36;
-    }
-
-    .galleryItem-4{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 37;
-        grid-row-end: 48;
-    }
-
-    .galleryItem-5{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 49;
-        grid-row-end: 60;
-    }
-
-    .galleryItem-6{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 61;
-        grid-row-end: 72;
-    }
-
-    .galleryItem-7{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 73;
-        grid-row-end: 84;
-    }
-
-    .galleryItem-8{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 85;
-        grid-row-end: 96;
-    }
 
     /* EQUIPO */
 

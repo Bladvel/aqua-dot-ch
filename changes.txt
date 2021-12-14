@@ -1,0 +1,13 @@
+- Agregue mixins a _bootstrapModifiers.scss
+- Agregue mixins a _trabajos.scss
+- Modifique los nombres de las imagenes de trabajo.css por nombres mas descriptivos
+- Agregue mixins a _footer.scss
+- Agregue un extend a _landingPage.scss
+- Arregle redundancias del SASS en _mediaQueries.scss
+- Agregue mixins a _mediaQueries.scss
+- Agregue un mixin a _contacto.scss
+- Agregue un mixin a _equipo.scss
+- Modifique los nombres de las imagenes de index.html por nombres mas descriptivos
+- Volvi responsive el mapa de contacto.html
+- Agregue titulos diferentes a cada pagina
+- Agregue keywords y description a cada pagina para el SEO

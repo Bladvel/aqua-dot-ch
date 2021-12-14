@@ -1,8 +1,7 @@
     /* CONTACTO */
     
-.contactoBody{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: $main-margin;
+#contactoBody{
+    iframe{
+        @include size(100%,300px);
+    }
 }

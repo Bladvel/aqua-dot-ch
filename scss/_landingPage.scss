@@ -3,11 +3,9 @@
     /* Landing page body */
 
 .landingBody{
-    display: flex;
-    justify-content: space-between;
+    @extend .footerContent;
     height: 80vh;
     margin-bottom: 10%;
-    align-items: center;
 }
 
 .lightWeight{
